@@ -1,0 +1,278 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+/* Selectores Basicos */
+p{
+  color: midnightblue;
+}
+
+#parrafo-dos{
+  background-color: skyblue;
+}
+
+.bg-skyblue{
+  background-color: skyblue;
+}
+
+.bg-steelblue{
+  background-color: steelblue;
+}
+
+.text-20{
+  font-size: 20px;
+}
+
+.text-32{
+  font-size: 32px;
+}
+
+
+
+/* Selectores Avanzados */
+.hijos-directos > li{
+  background-color: thistle;
+}
+
+.hijos-descendientes b{
+  background-color: thistle;
+}
+
+.hermanos-general ~ li{
+  background-color: thistle;
+}
+
+.hermanos-adyacentes + li{
+  background-color: thistle;
+}
+
+
+
+/* Selectores de atributos */
+.selectores-atributos a[href]{
+  color: orangered;
+}
+
+.selectores-atributos a[target="_blank"]{
+  font-weight: bold;
+}
+
+/* El comodin * aplica el estilo si contiene el texto en cuestion en cualquier parte */
+.selectores-atributos a[href*="jonmircha"]{
+  font-size: 24px;
+}
+
+/* El comodin del ^ aplica el estilo si contiene el texto en cuestion al inicio */
+.selectores-atributos a[href^="http://"]{
+  text-decoration: none;
+}
+
+/* El comodin $ aplica al estilo si contiene el texto en cuestion al final */
+.selectores-atributos a[class~="cursos"]{
+  background-color: midnightblue;
+}
+
+/* El comodin del | aplica al estulo si contine el texto en cuestion en una lista
+separada por espacios y que despues del texto en cuestion pueda venir un guion */
+.selectores-atributos a[class|="menu"]{
+  font-style: italic;
+}
+
+/* Selector universal */
+*{
+  font-family: sans-serif;
+}
+
+.selector-universal *{
+  font-size: 24;
+}
+
+/* Pseudoclases */
+
+.form-pseudoclases *:required{
+  border-color: yellow;
+}
+
+.form-pseudoclases *:valid{
+  border-color: green;
+}
+
+.form-pseudoclases *:invalid{
+  border-color: red;
+}
+
+.form-pseudoclases *:disabled{
+  background-color: pink;
+}
+
+.form-pseudoclases * :focus{
+  background-color: skyblue;
+}
+
+.menu-pseudoclases a:hover{
+  color: orange;
+}
+
+.menu-pseudoclases a:visited{
+  color: olive;
+}
+
+.p-pseudoclases:hover{
+  font-size: 20px;
+}
+
+#temario-css:target{
+  background-color: olive;
+}
+
+.lista-pseudoclases li:first-child{
+  color: green;
+}
+
+.lista-pseudoclases li:last-child{
+  color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3){
+  color: navy;
+}
+
+.lista-pseudoclases li:nth-child(4n){
+  font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1){
+  font-weight: bold;
+}
+
+.lista-pseudoclases li:nth-child(even){
+  background-color: yellow;
+}
+
+.lista-pseudoclases li:nth-child(odd){
+  background-color: orange;
+}
+
+.articulo-pseudoclases p:first-of-type{
+  background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type{
+  background-color: violet;
+}
+
+.articulo-pseudoclases p:nth-of-type(3){
+  background-color: fuchsia;
+}
+
+.articulo-pseudoclases *:not(p){
+  background-color: beige;
+}
+
+/* Pseudoelemntos */
+.saga-geminis::before{
+  content: "🤼‍♀️";
+}
+
+.saga-geminis::after{
+  content: "♊️";
+}
+
+.saga-precio::before{
+  content: "$";
+  font-weight: bold;
+}
+
+.saga-geminis::after{
+  content: "USD";
+  font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter{
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.p-pseudoelementos::first-line{
+  color: coral;
+}
+
+.p-pseudoelementos::selection{
+  color: greenyellow;
+  background-color: black;
+}
+
+.input-pseudoelementos::placeholder{
+  color: green;
+}
+
+.form-agrupar-selectores textarea,
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores input[type="text"]{
+  background-color: black;
+  display: block;
+  color: greenyellow;
+  width: 150px;
+  border-width: 1px;
+}
+
+/* 
+El algoritmo de CSS: Es la forma en que el navegador aplica los estilos
+al documento HTML 
+La Cascada
+La Especificidad
+La Herencia
+*/
+
+/* 
+Especificidad
+Etiqueta y pseudoelementos..............0,0,0,1
+Clases, atributos y pseudoclases........0.0,1,0
+Identificadores.........................0,1,0,0
+Estilos en linea........................1,0,0,0
+!Important...............Rompe la especificidad 
+*/
+
+blockquote#cita-marco.cita-marco{
+  background-color: lightsteelblue;
+}
+
+blockquote{
+  background-color: burlywood;
+}
+
+#cita-marco{
+  background-color: lightgreen;
+}
+
+blockquote.cita-marco{
+  background-color: tomato;
+}
+
+.cita-marco{
+  background-color: cornflowerblue;
+}
+
+blockquote#cita-marco{
+  background-color: lightsalmon;
+}
+
+.cita-marco{
+  background-color: mediumaquamarine  !important;
+  background-color: darkorange !important;
+  font-size: 32px;
+  border-style: dotted;
+  border-color: red;
+}
+
+.cita-marco cite{
+  background-color: pink;
+  background-color: inherit;
+  font-size: 24px;
+  font-size: initial;
+  border-style: inherit;
+  border-color: inherit;
+}
+
