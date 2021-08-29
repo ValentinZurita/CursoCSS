@@ -34,3 +34,72 @@
 .caja-bloque{
   margin: 4px;
 }
+
+.caja-none,
+.caja-linea, 
+.caja-hidden {
+  background-color: darkolivegreen;
+  color: white;
+  width: 600px;
+  height: 300px;
+  border: medium solid black;
+}
+
+.caja-linea{
+  display: inline-block;
+}
+
+.caja-none{
+  display: none;
+}
+
+.caja-hidden{
+  display: hidden;
+}
+
+.overflow{
+  background-color: darkturquoise;
+  width: 200px;
+  height: 100px;
+  overflow: visible;
+  overflow: hidden;
+  overflow: scroll;
+  overflow: auto;
+}
+
+.box-sizing-border,
+.box-sizing-content{
+  background-color: deepskyblue;
+  box-sizing: content-box;
+  width: 500px;
+  height: 250px;
+  padding: 10px;
+  border: thick solid black;
+}
+
+.box-sizing-border{
+  box-sizing: border-box;
+}
+
+.container-col-3{
+  background: burlywood;
+  width: 600px;
+  height: 300px;
+}
+
+.container-col-3 > *{
+  width: 200px;
+  float: left;
+  border: thin solid red;
+}
+
+/* Formateo a Border Box de Paul Lirish */
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
