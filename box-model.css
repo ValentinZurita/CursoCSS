@@ -1,4 +1,36 @@
-h2{
+.box{
+  width: 400px;
+  height: 200px;
   border-style: solid;
   border-width: 1px;
+  border-color: green;
+  border-width: thick;
+  border-style: solid;
+  border: 2px dashed blue;
+}
+
+.caja-uno,
+.caja-dos{
+  padding: 2px;
+  margin: 20px;
+  border: medium solid orange;
+  background-color: chocolate;
+}
+
+.caja-linea,
+.caja-bloque{
+  background-color: darkcyan;
+  color: white;
+  width: 500px;
+  height: 250px;
+  border: medium solid black;
+  padding: 16px;
+}
+
+.caja-bloque{
+  margin: 32px;
+}
+
+.caja-bloque{
+  margin: 4px;
 }
