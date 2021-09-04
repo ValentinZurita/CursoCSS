@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendiendo Flexbox</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    .container{
+      background-color: #333;
+      height: 30vh;
+      display: flex;
+      /* Define que una caja sera flexbox */
+      flex-direction: row;
+      /* Determina quien sera el eje principal  */
+      flex-wrap: wrap;
+      /* Permite saber si la caja envuelve o no a sus hijos */
+      flex-flow: row nowrap;
+      /* Es el shorthand de flex direction y flex wrap */
+      justify-content: flex-start;
+      /* Define la alineacion de los elementos hijos respecto al eje principal */
+      align-items: stretch;
+      /* Define la alineacion de los hijos en el eje transversal (cross axis) dentro de cada línea */
+      /* strecht flex-start flex-end center baseline */
+      align-content: flex-start;
+      /* Define la alineacion de los hijos en el eje transversal (cross axis) NO funciona cuando los hijos estan en una sola linea */
+      /* flex-star flex-end center space-between space-around space-evenly stretch */
+
+    }
+
+    .items{
+      border: medium solid #999;
+      /* width: 20%;
+      height: 20%; */
+      width: 100px;
+      background-color: #666;
+      color: white;
+      flex-grow: 0;
+      /* Es la habilidad o factor de crecimiento el valor por defecto es 0 y no se aceptan valores negativos */
+      flex-shrink: 1;
+      /* Es lo contrario a flex grow cuando la caja flexbox no tenga espacio sobrante se encongera por defecto su valor es 1 */
+      flex-basis: auto;
+      /* Es el tamaño del elemento hijo dentro de la linea de la caja flexbox */
+      flex: 0 1 auto;
+      /* Es un shorthand para las propiedades flex-grow flex-shrink y flex-basis en ese orden */
+      /* order: 0; */
+      /* Representa el orden que tendran los elementos hijos en la caja flexbox el valor por defecto es 0 y acepta valor negativo */
+      align-self: stretch;
+      /* stretch | flex-start | flex-end | baseline */
+      /* Sobreescribe el valor de la propedad align-item solo para el elemento hijo especcificado */
+    }
+
+    .items:nth-child(2){
+      flex-grow: 0;
+    }
+
+    .items:nth-child(2){
+      flex-grow: 0;
+      align-self: flex-start;
+      order: -1;
+
+    }
+
+    .items:nth-child(3){
+      flex-grow: 0;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <article class="items">Flex item 1</article>
+    <article class="items">Flex item 2</article>
+    <article class="items">Flex item 3</article>
+    <article class="items">Flex item 4</article>
+    <article class="items">Flex item 5</article>
+  </section>
+  <br><br>
+  <section class="container">
+    <article class="items">Flex item 1</article>
+    <article class="items">Flex item 2</article>
+    <article class="items">Flex item 3</article>
+  </section>
+  <br><br>
+  <section class="container">
+    <article class="items">itme1</article>
+    <article class="items">itme2</article>
+    <article class="items">itme3</article>
+    <article class="items">itme4</article>
+    <article class="items">itme5</article>
+    <article class="items">itme6</article>
+    <article class="items">itme7</article>
+    <article class="items">itme8</article>
+    <article class="items">itme9</article>
+    <article class="items">itme10</article>
+    <article class="items">itme11</article>
+    <article class="items">itme12</article>
+    <article class="items">itme13</article>
+    <article class="items">itme14</article>
+    <article class="items">itme15</article>
+    <article class="items">itme16</article>
+    <article class="items">itme17</article>
+    <article class="items">itme18</article>
+    <article class="items">itme19</article>
+  </section>
+</body>
+</html>

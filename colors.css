@@ -1,0 +1,42 @@
+.color-by-name{
+  background-color: coral;
+  color: rebeccapurple;
+  border: thin solid greenyellow
+}
+
+.color-by-hex{
+  /* Simplificacion de colores */
+  background-color: #ff6600;
+  background-color:#f60;
+  color: rebeccapurple;
+  border: thin solid black;
+  /* Del blanco al negro */
+  background-color:#ffffff ;
+  background-color:#000000 ;
+  /* Opacidad en colores */
+  background-color: #00000050;
+  background-color: #0003;
+}
+
+/* Sistema RGB */
+/* Acepta 8bits por canal 2 a la octava potencia = 256 */
+.color-rgb{
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 00, 00);
+  background-color: rgb(00, 255, 00);
+  background-color: rgb(00, 00, 255);
+  background-color: rgb(0, 0, 0);
+  color: rebeccapurple;
+  border: thick solid greenyellow;
+  /* Opacidad */
+  background-color: rgb(0, 0, 0,.55);
+}
+
+/* HSL */
+.color-hsl{
+  background-color: hsl(0, 60%, 49%);
+  color: hsl(0, 100%, 0%);
+  border: thick solid hsl(0, 0%, 100%);
+  /* Aplicar opacidad */
+  color: hsl(0, 100%, 90%, 80)
+}

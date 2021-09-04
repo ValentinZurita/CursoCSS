@@ -5,6 +5,8 @@
   left: 10px;
 }
 
+/* Posision relativa */
+
 .relative{
  background-color: turquoise; 
  position: relative;
@@ -12,4 +14,87 @@
  height: 50px;
  top: 50px;
  left: 50px;
+}
+
+/* Posicion absoluta */
+
+.absolute{
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Posicion Absoluta con ancestro */
+
+.relative-parent{
+  background-color: khaki;
+  width: 600px;
+  height: 50px;
+  position: relative;
+  top: 50px;
+  left:  50px;
+}
+
+.absolute-child{
+  background-color: lightcoral;
+  position: absolute;
+  /* left: 0;
+  top: 0; */
+  bottom: 0;
+  right: 0;
+}
+
+/* Posicion Fija */
+.fixed{
+  background-color: lightgreen;
+  position: fixed;
+  width: 300px;
+  height: 100px;
+  top: 30px;
+  left: 400px;
+}
+
+/* Posision Pegajosa */
+.sticky{
+  background-color: lightskyblue;
+  position: sticky;
+  top: 50px;
+
+}
+
+.sticky-parent{
+  border: thin dotted black;
+  height: 600px;
+}
+
+.sticky-child{
+  background-color: lightslategray;
+  position: sticky;
+  top: 75px;
+}
+
+/* Z Index */
+.z-index-1,
+.z-index-2{
+  background-color: mediumaquamarine;
+  border: thin solid black;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.z-index-1{
+  z-index: 1;
+  z-index: 0;
+
+}
+
+.z-index-2{
+  top: 200px;
+  left: 100px;
+  z-index: 2;
+  z-index: -1;
 }
