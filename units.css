@@ -1,0 +1,58 @@
+/*
+
+Unidades de medida 
+
+1) Absolutas
+  pc, cm, mm, in Q
+  pt(1/72in)
+  px(1/96in)
+
+2) Relativas
+  em, rem, ex, ch - al tamaño de la fuente 
+  em basada en la anchura de la "m" de la fuente 
+  rem basado en la anchura de la m de la fuente del elemento raiz (html)
+  ex basado en la altura de la x de la fuente del elemento
+  ch basado en la anchura del 0 de la fuente del elemento
+% al tamaño del contenedor
+  vw, vh, vmim, vmax - al tamaño del viewport
+  vw - ancho del viewport van de 1 a 100
+  vh - ancho del viewport van de 1 a 100
+  vmax - entre vw y vh toma el que tenga mayor valor
+  vmax - entre vw y vh toma el que tenga menos valor
+
+conversiones entre unidades - http://pxtoem.com/
+  
+  */
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after
+*::before{
+  box-sizing: inherit;
+}
+
+.pixels{
+  background-color: teal;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border: thick solid darkslategrey;
+}
+
+.ems{
+  background-color: teal;
+  font-size: 24px;
+  padding: 1em .5em;
+  border: thick solid darkslategrey;
+}
+
+.em-child{
+  background-color: salmon;
+  border: thin solid bisque;
+  font-size: 2em;
+  margin: 0.5em;
+  padding: 1.5em;
+}
