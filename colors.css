@@ -40,3 +40,22 @@
   /* Aplicar opacidad */
   color: hsl(0, 100%, 90%, 80)
 }
+
+.color-transparent-current{
+  background-color: darkturquoise;
+  background-color: currentColor;
+  background-color: transparent;
+  color: indigo;
+  border: thin solid currentColor;
+}
+
+.opacity{
+  background-color: orchid;
+  color: navy;
+  border: thick solid black;
+  opacity: .5;
+}
+
+.opacity-30{
+  opacity: .3;
+}
