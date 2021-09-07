@@ -26,6 +26,8 @@ conversiones entre unidades - http://pxtoem.com/
 
 html{
   box-sizing: border-box;
+  font-size: 20px;
+  font-size: 16px;
 }
 
 *,
@@ -55,4 +57,34 @@ html{
   font-size: 2em;
   margin: 0.5em;
   padding: 1.5em;
+}
+
+.rems{
+  background-color: teal;
+  font-size: 24px;
+  padding: 1rem .5rem;
+  border: thick solid darkslategrey;
+}
+
+.rem-child{
+  background-color: salmon;
+  border: thin solid bisque;
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding: 1.5rem;
+}
+
+.exs{
+  background-color: teal;
+  font-size: 24px;
+  padding: 1ex .5ex;
+  border: thick solid darkslategrey;
+}
+
+.exs-child{
+  background-color: salmon;
+  border: thin solid bisque;
+  font-size: 2ex;
+  margin: 0.5ex;
+  padding: 1ex;
 }
