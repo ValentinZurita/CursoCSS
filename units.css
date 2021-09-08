@@ -30,6 +30,10 @@ html{
   font-size: 16px;
 }
 
+body{
+  margin: 0;
+}
+
 *,
 *::after
 *::before{
@@ -88,3 +92,24 @@ html{
   margin: 0.5ex;
   padding: 1ex;
 }
+ 
+.ches{
+  background-color: teal;
+  width: 11ch;
+  border: thick solid darkslategrey;
+}
+
+.percentages{
+  background-color: teal;
+  width: 80%;
+  font-size: 100%;
+  padding: 5%;
+  margin: 20%;
+}
+
+ .viewport{
+   background-color: teal;
+   /* El body tiene un margen por defecto y las barras de scroll tambien forman parte del viewport */
+   width: 50vw;
+   height: 100vh;
+ }
