@@ -5,6 +5,51 @@
   font-weight: bold ;
   font-style: italic;
   font-variant: small-caps;
-  
+}
 
+@font-face {
+  font-family: "montserrat";
+  src: url(./assets/montserrat.woff)format("woff");
+}
+
+.montserrat{
+  font-family: "montserrat", sans-serif;
+}
+
+.roboto{
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+.text{
+  font-size: 1rem;
+  text-align: center;
+  text-align: left;
+  text-decoration: overline;
+  text-decoration: none;
+  text-indent: 3rem;
+  letter-spacing: .5rem;
+}
+
+.text-overflow{
+  background-color: bisque;
+  border: thin solid black;
+  padding: 1rem;
+  width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.white-space{
+  white-space: pre;
+}
+
+.word-spacing{
+  font-size: 2rem;
+  word-spacing: .5rem;
+}
+
+.writing-mode{
+  writing-mode: vertical-rl;
 }
