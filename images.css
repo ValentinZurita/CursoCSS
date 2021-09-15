@@ -1,0 +1,23 @@
+img{
+  width: 100%;
+  height: auto;
+}
+
+.card{
+  border: thin solid black;
+  width: 400px;
+  height: 400px;
+}
+
+.card img{
+  background-color: blue;
+  height: 300px;
+  object-fit: cover;
+  object-fit: none;
+  object-fit: contain;
+  object-fit: scale-down; /*Toma el valor que sea menor de contain y none*/
+  object-position: left top;
+  /* Valor por defecto */
+  object-position: -50px center;
+  object-position: 50% 50%;
+}
