@@ -1,0 +1,10 @@
+.box{
+  width: 400px;
+  height: 400px;
+}
+
+.outline{
+  outline-width: 10px;
+  outline-color: cadetblue;
+  outline-style: solid;
+}
