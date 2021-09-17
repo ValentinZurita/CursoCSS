@@ -1,0 +1,24 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  border: thin solid black;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.box-shadow{
+  /* box-shadow: mov-x mov-y blur-radius spread-blur color; */
+  box-shadow: 1rem 1rem 1rem 1rem #000;
+  /* Sombra interna */
+  box-shadow: 1rem 1rem 1rem .5rem #000 inset;
+}
