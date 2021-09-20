@@ -1,0 +1,54 @@
+html{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+body, h1, h2{
+  margin: 0%;
+}
+
+img{
+  max-width: 50%;
+  height: auto;
+}
+
+[id]{
+  scroll-margin-top: 8.5rem;
+}
+
+.header{
+  position: sticky;
+  top: 0;
+  padding: 2.5rem;
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+}
+
+.header a{
+  margin: 0 1rem;
+  color: cyan;
+}
+
+.header a:hover{
+  color: pink;
+}
+
+.slide{
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  color: gainsboro;
+  background-color: teal;
+}
+
+.slide:nth-child(even){
+  background-color: lightcoral;
+}
