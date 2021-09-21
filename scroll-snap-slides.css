@@ -17,13 +17,14 @@ body{
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: ;
+  scroll-snap-type: both mandatory;
 }
 
 .slide{
   width: 100%;
   height: inherit;
   background-color: lightslategrey;
+  scroll-snap-align: center;
 }
 
 .slide:nth-child(even){
@@ -40,4 +41,45 @@ body{
   align-items: center;
   font-size: 3vw;
   color: whitesmoke;
+}
+
+.carousel{
+  border: thick solid pink;
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  overflow-x: hidden;
+}
+
+.carousel-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 100%);
+  overflow: scroll hidden;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: plum;
+  scroll-snap-align: center;
+}
+
+.carousel-slide:nth-child(even){
+  background-color: teal;
+}
+
+.gradient-color{
+  background-image: linear-gradient(45deg, magenta, yellow);
+  background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
 }
