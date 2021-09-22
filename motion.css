@@ -63,3 +63,52 @@ html{
   filter: blur(.5rem);
   box-shadow: 1rem 1rem 2rem 0.5rem #000;
 }
+
+.transitions .card img{
+  transition: object-position 2s ease-in-out 3s;
+}
+
+.transitions .card img:hover{
+  object-position: 100% 50%;
+}
+
+.transform-2d img{
+  transition: transform 2s ease-in-out;
+} 
+
+.transform-2d img:hover{
+  transform: none;
+  transform: translateX(4rem);
+  transform: translateY(4rem);
+  transform: translate(-4rem, -4rem);
+  transform: scaleX(2);
+  transform: scaleY(.5);
+  transform: scale(.5, .5);
+  transform: scale(-.5, .5);
+  transform: rotateX(60deg);
+  transform: rotateY(60deg);
+  transform: rotateZ(60deg);
+  transform: skew(20deg);
+  transform: skewX(20deg);
+  transform: skewY (20deg);
+  transform: skew(20deg, 20deg);
+
+  transform: matrix(1, 2, 2, 3, 5, 5);
+  transform: translate(25%, 50%) rotate(240deg) skew(10deg) scale(-0.5, -0.5);
+}
+
+.transform-3d{
+  perspective: 10rem;
+}
+
+.transform-3d img{
+  transition: transform 2s ease-in-out;
+}
+
+.transform-3d img:hover{
+  transform: translateZ(4rem);
+  transform: perspective(10rem) translateZ(4rem);
+  transform: perspective(10rem) translateZ(-4rem);
+  transform: translateZ(4rem);
+  transform: translate3d(2rem, 50%, -3rem);
+}
