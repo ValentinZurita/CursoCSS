@@ -176,7 +176,15 @@ html{
 }
 
 @keyframes myAnimation{
-  
+  from{
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(100%);
+  }
 }
 
 .my-animation{
@@ -184,5 +192,52 @@ html{
   animation-play-state: ; */
   animation-name: myAnimation;
   animation-duration: 3s;
+  /* delay de la animacion */
+  animation-delay: 3ms;
+  /* Duracion de la animacion */
+  animation-timing-function: cubic-bezier(1,0,0,1);
+  animation-timing-function: ease-in-out;
+  /* Repeticion de la animacion */
+  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
+  /* Indica la direccion de la animacion */
+  animation-direction: reverse;
+  animation-direction: alternate;
+  /* Al final de la animacion se queda con lo estilos finales de la animacion */
+  animation-fill-mode: forwards;
+  /* Al inicio de la animacion se queda con los estilos iniciales de la animacion */
+  animation-fill-mode: backwards;
+  /* Ambas */
+  animation-fill-mode: both;
+  /* Iniciar y parar la animacion */
+  animation-play-state: paused;
+  animation-play-state: running;
+
+}
+
+@keyframes myAnimation2 {
+  0%{
+    opacity: 0;
+    transform: translateX(0);
+  }
+  
+  50%{
+    opacity: 0.5;
+    transform: translateX(-50%);
+  }
+  
+  75%{
+    transform: translateX(-75%);
+  }
+  
+  100%{
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+
+.my-animation-2{
+  animation: myAnimation2 2s;
+  animation: myAnimation2 10s;
 }
 
