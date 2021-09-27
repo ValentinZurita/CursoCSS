@@ -63,5 +63,30 @@ img {
   display: grid;
   grid-template-columns: 20% repeat(2, 30%) 20%;
   grid-template-rows: repeat(5, auto);
-  gap: 1vh 1vw;
+  /* gap: 1vh 1vw; */
 }
+
+.grid-explicit .item:nth-child(10){
+  color: cadetblue;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-row: 2 / 3;
+  grid-column: 3 / 5;
+  /* Con grid area pones los valores de grid row y luego grid colum */
+}
+
+.grid-explicit .item:nth-child(12){
+  color: cadetblue;
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+.grid-explicit .item:nth-child(15){
+  color: cadetblue;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+}
+
+
